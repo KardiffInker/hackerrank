@@ -1,0 +1,16 @@
+listy = []
+scorelist=[]
+
+if __name__ == '__main__':
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        nested_list = [name,score]
+        listy.append([name,score])
+        scorelist+=[score]
+
+listy.sort()
+for i in range (len(listy)):
+    if (listy[i][1]) == (scorelist[i]):
+        print (listy[i][0])
+        print (listy[i+1][0])
